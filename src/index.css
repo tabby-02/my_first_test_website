@@ -1,0 +1,111 @@
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* ͷ������ */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+  .header h1 {
+      font-size: 50px;
+  }
+
+/* ������ */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+  /* ���������� */
+  .topnav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+  }
+
+      /* ������ɫ�޸� */
+      .topnav a:hover {
+          background-color: #ddd;
+          color: black;
+      }
+
+/* �������� */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* �Ҳ��� */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* ͼ�񲿷� */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* ���¿�ƬЧ�� */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* �к���������� */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* �ײ� */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* ��Ӧʽ���� - ��Ļ�ߴ�С�� 800px ʱ�����в��ָ�Ϊ���²��� */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+      width: 100%;
+      padding: 0;
+  }
+}
+
+/* ��Ӧʽ���� -��Ļ�ߴ�С�� 400px ʱ�������Ȳ��ָ�Ϊ���²��� */
+@media screen and (max-width: 400px) {
+  .topnav a {
+      float: none;
+      width: 100%;
+  }
+}
